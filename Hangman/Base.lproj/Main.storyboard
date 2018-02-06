@@ -26,6 +26,9 @@
                                 <state key="normal" title="New Word">
                                     <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="chooseNewWordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKy-7T-5l7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hint" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tt-ve-WgG">
                                 <rect key="frame" x="16" y="126" width="343" height="71"/>
@@ -71,6 +74,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hintLabel" destination="3tt-ve-WgG" id="GFe-RV-J8V"/>
+                        <outlet property="inputTextField" destination="UOT-Ru-yWd" id="72V-Z6-8qm"/>
+                        <outlet property="letterBankLabel" destination="F7n-d1-DOu" id="GmK-8K-XC5"/>
+                        <outlet property="remainingGuessesLabel" destination="8tb-fF-6fN" id="B0D-E8-ZML"/>
+                        <outlet property="wordToGuessLabel" destination="NFG-Ur-aig" id="9Ze-dY-31W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
